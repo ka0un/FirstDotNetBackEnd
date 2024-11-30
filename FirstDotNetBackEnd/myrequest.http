@@ -1,0 +1,22 @@
+﻿### Get All
+GET http://localhost:5012/todos
+
+### Create
+POST http://localhost:5012/todos
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Learn C#23",
+    "isComplete": false,
+    "dueDate": "2021-12-31T00:00:00"
+}
+
+### Get By Id
+GET http://localhost:5012/todos/2
+
+### Delete
+DELETE http://localhost:5012/todos/2
+
+### Get All via Middleware
+GET http://localhost:5012/tasks/
